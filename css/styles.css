@@ -235,7 +235,6 @@ img {
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
   background: var(--btn-bg-color);
-  display: block;
   margin: 0 auto;
   margin-top: 30px;
   min-width: 216px;
@@ -692,14 +691,15 @@ img {
 
 .close-btn {
   position: absolute;
-  padding: 6px;
-  right: 8px;
   top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--main-bg-color);
+  background: inherit;
   border-radius: 50%;
+  fill: currentColor;
+  transition: color var(--duration) var(--cubic);
 }
 
 .is-hidden {
